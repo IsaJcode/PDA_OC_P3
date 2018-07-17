@@ -8,18 +8,18 @@ pygame.init()
 #Load image
 
 fenetre = pygame.display.set_mode((580, 480)) #480 = 15 * 32 , the size image should be 32
-tableau = pygame.image.load("Sable.jpg").convert()
-fond = pygame.image.load("Sea.jpg").convert() 
+tableau = pygame.image.load("ressource/Sable.jpg").convert()
+fond = pygame.image.load("ressource/Sea.jpg").convert() 
 
-personnage = pygame.image.load("MacGyver.png").convert_alpha()
-mur = pygame.image.load("mur.jpg").convert_alpha()
-aiguille = pygame.image.load("aiguille.png").convert_alpha()
-seringue = pygame.image.load("seringue.png").convert_alpha()
-tube = pygame.image.load("tube_plastique.png").convert_alpha()
-ether = pygame.image.load("ether.png").convert_alpha()
-gardien = pygame.image.load("Gardien.png").convert_alpha()
-top = pygame.image.load("Top.jpg").convert_alpha()
-down = pygame.image.load("Down.jpg").convert_alpha()
+personnage = pygame.image.load("ressource/MacGyver.png").convert_alpha()
+mur = pygame.image.load("ressource/mur.jpg").convert_alpha()
+aiguille = pygame.image.load("ressource/aiguille.png").convert_alpha()
+seringue = pygame.image.load("ressource/seringue.png").convert_alpha()
+tube = pygame.image.load("ressource/tube_plastique.png").convert_alpha()
+ether = pygame.image.load("ressource/ether.png").convert_alpha()
+gardien = pygame.image.load("ressource/Gardien.png").convert_alpha()
+top = pygame.image.load("ressource/Top.jpg").convert_alpha()
+down = pygame.image.load("ressource/Down.jpg").convert_alpha()
 
 #Creation of objets
 LabOne = labi(level, mur)
