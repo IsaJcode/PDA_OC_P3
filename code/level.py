@@ -1,4 +1,4 @@
-niveau = "000mmmmm0m00mmm \
+level = "000mmmmm0m00mmm \
 0m00000m0mm0m0m \
 00mm0m000m0000m \
 m000mmmm000mm0m \
