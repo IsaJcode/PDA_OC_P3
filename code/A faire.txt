@@ -1,19 +1,15 @@
-Mar
-Ajouter un fichier README avec la version de python à utiliser
-Ajouter le fichier requirement
-Tenter de générer un environnement virtuel avec un fichier requirement
-
-Mer
+Ven
 Commentaire/nettoyage des fichiers team/level et initialise
 Passer Pylint sur les fichiers team/level et initialise
-
-Jeu
-Faire un fichier constante.py pour les liens vers les images.
-Journaling de l'ensemble des lignes de commande
 
 Sam et Dim
 Faire les slides
 Faire le PDF
 
 Lun
+Ajouter un fichier README avec la version de python à utiliser
 Essayer de configurer Pylint pour ignorer certaine chose
+
+Mar
+Faire un fichier constante.py pour les liens vers les images.
+Journaling de l'ensemble des lignes de commande
