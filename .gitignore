@@ -1,0 +1,10 @@
+env/Include/
+env/Lib/
+env/Scripts/
+env/tcl/
+env_recons/Include/
+env_recons/Lib/
+env_recons/Scripts/
+env_recons/tcl/
+*.json
+code/__pycache__/

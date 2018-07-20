@@ -1,0 +1,14 @@
+Commande pour creer un environnement virtuel:
+virtualenv -p c:\Python27\python.exe env
+ou
+
+Commande pour installer pygame (voir tuto-w10.pdf)
+
+Commande pour creer le fichier requirements:
+pip list > requirements.txt
+
+
+Commande pour utiliser le fichier requirement:
+Se placer là où se trouve le fichier requirement, puis entrer
+c:\users\job\documents\pda_oc_p3\env_recons\scripts\python.exe -m pip install -r requirements.txt
+Attention, il faut avoir le fichier requirement avec des == comme dans celui du fichier env_recon

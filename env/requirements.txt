@@ -1,0 +1,6 @@
+Package    Version
+---------- -------
+pip        10.0.1 
+pygame     1.9.2  
+setuptools 40.0.0 
+wheel      0.31.1 
