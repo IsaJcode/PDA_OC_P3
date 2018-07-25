@@ -5,10 +5,14 @@ Les 0 seront interprétés comme des positions libres, les m comme des positions d
 
 2- Utilisation de pygame:
 Le module pygame est essentielement uliliser pour les fonctions d'affichages et de récupération des évènements clavier
-La technique d'affiche est d'empiler les images les unes au dessus des autres
+Pour l'affichage,
+On cree un objet fenetre et on utilise la methode blit .blit(image, position) pour afficher des images dans b
+La technique d'affichage est d'empiler les images les unes au dessus des autres
 
 3- Les Objets
 Héritage
+
+J'ai choisi d'utiliser des méthodes/attributs de classe pour les objet ramassés pour pouvoir avoir accès à tous les objets à partir de la classe
 
 4- Position des objets au départ:
 Position de McGyver à l'entrée du labyrinthe, Position du garde
@@ -50,8 +54,7 @@ collision_garde(self, pos) => retourne si oui ou non McGyver a atteint le garde
 
 7- Compteur d'objets ramassés:
 
-J'ai choisi un attribut de classe nbElts pour gerer le nombre d'objet
-c'est le constructeur de la classe Element qui s'en occupe
+Le nombre d'objet ramassé est enregistré par l'attribut NbElemtPick de McGyver il est modifié en fonction du retour de la méthode Element.collision_elt
 
 8- Déroulement du jeu
 La fonction principale utilisée pour le déroulement du jeu est la fonction routine,
