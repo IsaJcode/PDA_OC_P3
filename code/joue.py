@@ -3,25 +3,24 @@ It describes the routine call each time a key is pressed"""
 
 import pygame
 from pygame.locals import *
-from initialise import *
-from team import *
 
-continuer = 1
+from initialise import initialisation
+from initialise import LabOne
+from initialise import Max
+from initialise import MacGyver
+from initialise import continuer
+from initialise import display_all
+
 
 def routine(i):
     """reset the window : The technique is to put the window picture
     overhead others images, in the precedent position"""
-    fenetre.blit(fond, (0, 0))
-    #display the labyrinth
-    LabOne.display_labi(fenetre)
     #move MacGyver managing collosion
     MacGyver.move(i, LabOne, Max)
-    # display all MacGyver, elements and the gardian
-    MacGyver.display(fenetre)
-    Element.display_all_elts(fenetre)
-    Max.display(fenetre)
-    MacGyver.display_res(fenetre)
-    pygame.display.flip()  #Necessary to refresh the game window
+    #Display
+    display_all()
+
+initialisation()
 
 while continuer:
     for event in pygame.event.get():      #To analyze all received events

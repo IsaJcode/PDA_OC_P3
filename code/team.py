@@ -1,3 +1,4 @@
+""" This module provides all classes used in the code"""
 import random
 import pygame
 from pygame.locals import *
@@ -92,7 +93,7 @@ class result:
             window.blit(self.Nok, self.position)
         return None
     
-class labi :
+class Labi :
 
     def __init__(self, lev, im):
         self.level = lev         #game level

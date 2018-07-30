@@ -1,44 +1,44 @@
-from team import *
+""" This module create all objets used in the code and provides display functions"""
+from team import Labi
+from team import Element
+from team import Player
+from team import result
+from team import Garde
 from level import *
 
-import pygame
-from pygame.locals import *
-pygame.init()
-
-#Load image
-
-fenetre = pygame.display.set_mode((580, 480)) #480 = 15 * 32 , the size image should be 32
-tableau = pygame.image.load("ressource/Sable.jpg").convert()
-fond = pygame.image.load("ressource/Sea.jpg").convert() 
-
-personnage = pygame.image.load("ressource/MacGyver.png").convert_alpha()
-mur = pygame.image.load("ressource/mur.jpg").convert_alpha()
-aiguille = pygame.image.load("ressource/aiguille.png").convert_alpha()
-seringue = pygame.image.load("ressource/seringue.png").convert_alpha()
-tube = pygame.image.load("ressource/tube_plastique.png").convert_alpha()
-ether = pygame.image.load("ressource/ether.png").convert_alpha()
-gardien = pygame.image.load("ressource/Gardien.png").convert_alpha()
-top = pygame.image.load("ressource/Top.jpg").convert_alpha()
-down = pygame.image.load("ressource/Down.jpg").convert_alpha()
-
 #Creation of objets
-LabOne = labi(level, mur)
+LabOne = Labi(LEVEL, MUR)
 
-Elt1 = Element(LabOne, aiguille)
-Elt2 = Element(LabOne, ether)
-Elt3 = Element(LabOne, tube)
-Elt4 = Element(LabOne, seringue)
+Elt1 = Element(LabOne, AIGUILLE)
+Elt2 = Element(LabOne, ETHER)
+Elt3 = Element(LabOne, TUBE)
+Elt4 = Element(LabOne, SERINGUE)
 
-Max = Garde(gardien, LabOne)
-res = result (top, down)
-MacGyver = Player(personnage, LabOne, res)
+Max = Garde(GARDIEN, LabOne)
+res = result(TOP, DOWN)
+MacGyver = Player(PERSONNAGE, LabOne, res)
+continuer = 1
 
 
-#Display elements in initial position
-fenetre.blit(tableau, (0,0))
-fenetre.blit(fond, (0,0))
-LabOne.display_labi(fenetre)
-MacGyver.display(fenetre)
-Element.display_all_elts(fenetre)
-Max.display(fenetre)
-pygame.display.flip() #Necessary to refresh the game window
+
+def initialisation():
+    """Display elements in initial position"""
+    FENETRE.blit(TABLEAU, (0, 0))
+    FENETRE.blit(FOND, (0, 0))
+    LabOne.display_labi(FENETRE)
+    MacGyver.display(FENETRE)
+    Element.display_all_elts(FENETRE)
+    Max.display(FENETRE)
+    pygame.display.flip() #Necessary to refresh the game window
+
+def display_all():
+    """Display elements in update position"""
+    FENETRE.blit(FOND, (0, 0))
+    #display the labyrinth
+    LabOne.display_labi(FENETRE)
+    # display all MacGyver, elements and the gardian
+    MacGyver.display(FENETRE)
+    Element.display_all_elts(FENETRE)
+    Max.display(FENETRE)
+    MacGyver.display_res(FENETRE)
+    pygame.display.flip()  #Necessary to refresh the game window
