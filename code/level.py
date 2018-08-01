@@ -1,7 +1,5 @@
 """ This module provides all constants used in the code"""
 import pygame
-from pygame.locals import *
-pygame.init()
 
 #LEVEL provides a string whih describes the labyrinth
 #0 represent free place

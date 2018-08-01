@@ -2,7 +2,7 @@
 from team import Labi
 from team import Element
 from team import Player
-from team import result
+from team import Result
 from team import Garde
 from level import *
 
@@ -15,7 +15,7 @@ Elt3 = Element(LabOne, TUBE)
 Elt4 = Element(LabOne, SERINGUE)
 
 Max = Garde(GARDIEN, LabOne)
-res = result(TOP, DOWN)
+res = Result(TOP, DOWN)
 MacGyver = Player(PERSONNAGE, LabOne, res)
 continuer = 1
 

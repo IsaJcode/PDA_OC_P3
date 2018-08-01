@@ -1,15 +1,13 @@
+Jeu
+Reorganier les noms des fichiers (constante.py...)
+Faire des impressions écrans des résultats pylint
+Revoir tranquilement l'environnement, les livrables
+Pourquoi n'y a t'il pas tous les fichiers de pygame importer dans l'environnement?
+A quoi servent les fonctions Import?
+(Ajouter un fichier README avec la version de python à utiliser?)
+
 Ven
-Commentaire/nettoyage des fichiers team/level et initialise
-Passer Pylint sur les fichiers team/level et initialise
+Faire les slides
 
 Sam et Dim
-Faire les slides
 Faire le PDF
-
-Lun
-Ajouter un fichier README avec la version de python à utiliser
-Essayer de configurer Pylint pour ignorer certaine chose
-
-Mar
-Faire un fichier constante.py pour les liens vers les images.
-Journaling de l'ensemble des lignes de commande

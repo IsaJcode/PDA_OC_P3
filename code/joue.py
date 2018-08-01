@@ -1,15 +1,16 @@
 """ This module start and stop the game
 It describes the routine call each time a key is pressed"""
 
-import pygame
-from pygame.locals import *
-
 from initialise import initialisation
 from initialise import LabOne
 from initialise import Max
 from initialise import MacGyver
 from initialise import continuer
 from initialise import display_all
+
+import pygame
+from pygame.locals import *
+pygame.init()
 
 
 def routine(i):
