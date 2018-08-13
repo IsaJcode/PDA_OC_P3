@@ -4,10 +4,10 @@ from team import Element
 from team import Player
 from team import Result
 from team import Garde
-from level import *
+from constants import *
 
 #Creation of objets
-LabOne = Labi(LEVEL, MUR)
+LabOne = Labi(LEVEL, MUR, STARTPOINT, STOPPOINT)
 
 Elt1 = Element(LabOne, AIGUILLE)
 Elt2 = Element(LabOne, ETHER)

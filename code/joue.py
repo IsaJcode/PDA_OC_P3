@@ -1,12 +1,12 @@
 """ This module start and stop the game
 It describes the routine call each time a key is pressed"""
 
-from initialise import initialisation
-from initialise import LabOne
-from initialise import Max
-from initialise import MacGyver
-from initialise import continuer
-from initialise import display_all
+from initdisplay import initialisation
+from initdisplay import LabOne
+from initdisplay import Max
+from initdisplay import MacGyver
+from initdisplay import continuer
+from initdisplay import display_all
 
 import pygame
 from pygame.locals import *
@@ -25,7 +25,7 @@ initialisation()
 
 while continuer:
     for event in pygame.event.get():      #To analyze all received events
-        if event.type == QUIT:            #End the loop if QUIT (QUIT = manually close the window)
+        if (event.type == QUIT) or (MacGyver.res.data != 2):            #End the loop if QUIT (QUIT = manually close the window)
             continuer = 0
         elif event.type == KEYDOWN and event.key == K_LEFT:
             routine(1)

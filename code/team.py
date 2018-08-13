@@ -103,14 +103,14 @@ class Labi:
     """
         class representing the labyrinth object
     """
-    def __init__(self, lev, im):
+    def __init__(self, lev, im, startp, stopp):
 	    #set the entry, the exit, free and unfree position list,
         #wall labyrinth picture and the level of the game which is the labyrinth configuration
         self.level = lev         #game level
-        self.entry = (0, 0)        #labyrinth entry position
-        self.exit = (448, 448)    #labyrinth exit position
-        self.list = list()         #For the list of not available positions (wall)
-        self.lib = list()         #For the list of available positions
+        self.entry = startp      #labyrinth entry position
+        self.exit = stopp        #labyrinth exit position
+        self.list = list()       #For the list of not available positions (wall)
+        self.lib = list()        #For the list of available positions
         self.picture = im       #image for the wall
 
         #To initialise the list of available and not available positions

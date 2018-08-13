@@ -21,6 +21,9 @@ m000m00m0mm00mm \
 mmmmm0mm0mm0mmm \
 m00000mm00m0000 "
 
+STARTPOINT = (0, 0)
+STOPPOINT = (448, 448)
+
 #Window creation
 FENETRE = pygame.display.set_mode((580, 480)) #480 = 15 * 32 , the size image should be 32
 
