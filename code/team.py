@@ -23,7 +23,7 @@ class Garde(Visitor):
     """
     def __init__(self, pic, lab):
         # A Gard is a Visitor initially at the labyrinth exit
-        Visitor.__init__(self, pic, lab.exit)
+        super().__init__(pic, lab.exit)
 
     def collision_garde(self, pos):
         #McGyver meet the gardian or not?
@@ -37,7 +37,7 @@ class Player(Visitor):
     def __init__(self, pic, lab, result):
         # A player is a Visitor initially at the labyrinth entry
         # He should pick objects and display a result at the end of the game
-        Visitor.__init__(self, pic, lab.entry)
+        super().__init__(pic, lab.entry)
         self.nb_elemt_pick = 0
         self.res = result
 
@@ -174,7 +174,7 @@ class Element(Visitor):
         #An element is a Visitor, when it is created, the number of created
 		#elements and the list of elements inside the labyrinth is increased
         if Element.nb_elts < 4:  #Number of elements is limited to 4
-            Visitor.__init__(self, picture, lab.new_pos_elt())
+            super().__init__(picture, lab.new_pos_elt())
             Element.list_in_lab.append(self)
             Element.nb_elts += 1
 
